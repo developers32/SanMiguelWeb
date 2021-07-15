@@ -1,2 +1,2 @@
-# SanMiguelWeb
-Website
+# San-Miguel
+ San Miguel Website

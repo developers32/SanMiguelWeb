@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Municipality of San Miguel</title>
+	<link rel="icon" href="picture/smlogo.png" type="image">
+	<link rel="stylesheet" type="text/css" href="css/category.css">
+	<link rel="stylesheet" type="text/css" href="css/pic.css">
+	<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body style="background-color:#728FCE;">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".button").click(function(){
+				var value = $(this).attr("data-filter");
+				if (value == "all")
+				{
+					$(".filter").show("1000");
+				}
+				else
+				{
+					$(".filter").not("." + value).hide("1000");
+					$(".filter").filter("." + value).show("1000");
+				}
+				//Add active class
+				$("ul .button").click(function(){
+					$(this).addClass('active').siblings().removeClass('active');
+				})
+			})
+		})
+	</script>
+
+</head>
+
+<body style="background.png')">
+	
+	<a href="index.html"><img  src="images/sml.png" width="180px" height="150px" align="left"  style="position:absolute; margin-top:-30px; margin-left:20px;">
+
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a class="active" href="category.html">Municipality of San Miguel</a>
+		<a href="vid.html">Videos</a>
+
+		<a href="contak.html">Contact us</a>
+
+	</div>
+
+<center><img src="images/bg.jpg" ></center>
+	<div class="container" style="width:1100px; top: 50px; left:150px;" >
+		
+		
+		<a href="description/history.html" ><img src="picture/history.jpg" style="width:500px; height:300px;" class="box filter history"  >
+		
+
+		<a href="description/baranggay.html"><img src="images/basemap.jpg" style="width:500px; height:300px;" class="box filter map">
+		
+		
+		<a href="description/tspots.html"><img src="picture/tspots.jpg" style="width:500px; height:300px;" class="box filter spots">
+		
+
+		<a href="description/population.html"><img src="images/sml.png" style="width:500px; height:300px;" class="box filter popu">	
+
+	</div>
+
+</body>
+</html>
